@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(#fff, #e2ba8c);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+p {
+  color: #555;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 5px;
+  padding-right: px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.btn {
+  display: inline-block;
+  background: #c43d08d8;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: #563434;
+}
+
+.header .row {
+  margin-top: 0px;
+}
+.categories {
+  margin: 70px 0;
+}
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img {
+  width: 100%;
+}
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+.title::after {
+  content: "";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+}
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+.col-4 p {
+  font-size: 14px;
+}
+.rating .fa {
+  color: #ff523b;
+}
+.col-4:hover {
+  transform: translateY(-15px);
+}
+
+
+.offer {
+  background: radial-gradient(#fff, #e2ba8c);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+.col-2 .offer-img {
+  padding: 50px;
+}
+small {
+  color: #555;
+}
+
+
+.testimonial {
+  padding-top: 100px;
+}
+.testimonial .col-3 {
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0 rgb(229, 186, 186);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.testimonial .col-3 img {
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.testimonial .col-3:hover {
+  transform: translateY(-15px);
+}
+.fa.fa-quote-left {
+  font-size: 34px;
+  color: #ff523b;
+}
+.col-3 p {
+  font-size: 12px;
+  margin: 12px 0;
+  color: #777;
+}
+.testimonial .col-3 h3 {
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+
+
+.brands {
+  margin: 100px auto;
+}
+.col-5 {
+  width: 160px;
+}
+.col-5 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.col-5 img:hover {
+  filter: grayscale(0);
+}
+
+
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p {
+  color: #8a8a8a;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1 {
+  flex-basis: 30%;
+}
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+}
+        
+      </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <title> Book Details - Diwan Store </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+ 
+<body>
+<div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.htm">
+                    <img src="../images/diwan-logo@3x.png" width="125px">
+                </a>
+
+            </div>
+              <nav>
+                 <ul id="MenuItems">
+                    <li> <a href="index.htm"> Home </a> </li>
+                    <li> <a href="books.htm"> Products </a> </li>
+                    <li> <a href="about us.htm"> About </a> </li>
+                    <li> <a href="contact us.html"> Contact </a> </li>
+                    <li> <a href="Account.htm"> Account </a> </li>
+                 </ul>
+
+               </nav>
+            <a href="cartpage.htm">
+                <img src="../images/cart.png" width="30px" height="30px">
+            </a>
+            <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+       
+    </div>
+  
+  <center><h1>Contact us </h1></center>   
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="Email">email:</label><br>
+        <input type="text" id="Email" name="Email"><br>
+        <label for=" Sub">subject:</label><br>
+        <input type="text" id="Sub" name="Sub"><br>
+        <label for=" Mass">leave us amessage:</label><br>
+        <input type="text" id="Mass " name=" Mass"><br>
+
+        <input type="submit" value="Submit">
+      </form> 
+        
+    <div class="footer">
+    <div class="container">
+          <div class="row">
+                <div class="footer-col-1">
+                      <h3>Download our App</h3>
+                      <p>Download App for Android and IOS Mobile Phones.</p>
+                      <div class="app-logo">
+                            <img src="../images/play-store.png">
+                            <img src="../images/app-store.png">
+                      </div>
+                </div>
+
+                <div class="footer-col-2">
+                      <img src="../images/diwan-logo@3x.png">
+                      <p>Our purpose Is To Sustainably Maka The Pleasure
+                            and Benefits of reading Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                      <h3>Useful Links</h3>
+                      <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post </li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                      </ul>
+                </div>
+
+                <div class="footer-col-4">
+                      <h3>Follow US</h3>
+                      <ul>
+                            <li>Facebook</li>
+                            <li>Twitter </li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                      </ul>
+                </div>
+          </div>
+          <hr>
+          <p class="copyright"> copyright 2021 </p>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>

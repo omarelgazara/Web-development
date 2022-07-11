@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <title> All Books - Diwan Store </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.htm">
+                    <img src="../images/diwan-logo@3x.png" width="125px">
+                </a>
+
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.htm"> Home </a> </li>
+                    <li> <a href="books.htm"> Books </a> </li>
+                    <li> <a href="about us.htm"> About </a> </li>
+                    <li> <a href="contact us.html"> Contact </a> </li>
+                    <li> <a href="Account.htm"> Account </a> </li>
+                </ul>
+
+            </nav>
+            <a href="cartpage.htm">
+                <img src="../images/cart.png" width="30px" height="30px">
+            </a>
+            <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2> All Books</h2>
+            <select>
+                <option> Default Sorting </option>
+                <option> Sort by price </option>
+                <option> Sort by popularity </option>
+                <option> Sort by rating </option>
+                <option> Sort by type </option>
+
+            </select>
+
+        </div>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="../images/product1.jpg">
+                    <h4> Win</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$59.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../images/product2.jpg">
+                    <h4> In The Eye Of The Sun</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$199.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../images/product3.jpg">
+                    <h4> The AlChemist</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$79.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../images/product4.jpg">
+                    <h4> Paradise</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$59.00</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="../images/product5.jpg">
+                    <h4> The Giver </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$49.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../images/product6.jpg">
+                    <h4> The 100</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$59.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../images/product7.jpg">
+                    <h4> Death On The Nile</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$59.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../images/product8.jpg">
+                    <h4> How To Fall In Love </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$299.00</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="../images/product9.jpg">
+                    <h4> دفاتر الحرب الغربية </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$69.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../images/product10.jpg">
+                    <h4> اتنين ضباط</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$99.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../images/product11.jpg">
+                    <h4> 1919 </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$59.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="../images/product12.jpg">
+                    <h4> اربعة وعشرين ساعة حياة</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$69.00</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span> 1 </span>
+            <span> 2 </span>
+            <span> 3 </span>
+            <span> 4 </span>
+            <span> &#8594; </span>
+        </div>
+
+    </div>
+
+    <!---------footer----------->
+
+    <div class="footer">
+        <div class="container">
+              <div class="row">
+                    <div class="footer-col-1">
+                          <h3>Download our App</h3>
+                          <p>Download App for Android and IOS Mobile Phones.</p>
+                          <div class="app-logo">
+                                <img src="../images/play-store.png">
+                                <img src="../images/app-store.png">
+                          </div>
+                    </div>
+
+                    <div class="footer-col-2">
+                          <img src="../images/diwan-logo@3x.png">
+                          <p>Our purpose Is To Sustainably Maka The Pleasure
+                                and Benefits of reading Accessible to the Many.</p>
+                    </div>
+                    <div class="footer-col-3">
+                          <h3>Useful Links</h3>
+                          <ul>
+                                <li>Coupons</li>
+                                <li>Blog Post </li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                          </ul>
+                    </div>
+
+                    <div class="footer-col-4">
+                          <h3>Follow US</h3>
+                          <ul>
+                                <li>Facebook</li>
+                                <li>Twitter </li>
+                                <li>Instagram</li>
+                                <li>YouTube</li>
+                          </ul>
+                    </div>
+              </div>
+              <hr>
+              <p class="copyright"> copyright 2021 </p>
+        </div>
+  </div>
+  </div>
+
+
+
+
+
+
+    <!---------Js for toggle menu -------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>
